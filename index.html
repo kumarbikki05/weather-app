@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="weather-app">
+    <header class="header">
+      <h1>☁ Weather App</h1>
+      <p>Find the weather anywhere in the world</p>
+    </header>
+
+    <form class="search-box" id="searchForm">
+      <input
+        type="text"
+        id="cityInput"
+        placeholder="Enter city name..."
+        aria-label="City name"
+        required
+      >
+      <button type="submit" id="searchBtn">Search</button>
+    </form>
+
+    <p id="message" class="message" role="status">
+      Search for a city to see its weather.
+    </p>
+
+    <section id="weatherCard" class="weather-card" hidden>
+      <h2 id="cityName">City</h2>
+      <p id="date" class="date"></p>
+
+      <div class="weather-main">
+        <span id="weatherIcon" class="weather-icon">☀️</span>
+        <div>
+          <p id="temperature" class="temperature">--°C</p>
+          <p id="description" class="description">Weather</p>
+        </div>
+      </div>
+
+      <div class="weather-details">
+        <div class="detail">
+          <span>💧</span>
+          <p>Humidity</p>
+          <strong id="humidity">--%</strong>
+        </div>
+
+        <div class="detail">
+          <span>💨</span>
+          <p>Wind Speed</p>
+          <strong id="wind">-- km/h</strong>
+        </div>
+
+        <div class="detail">
+          <span>🌡️</span>
+          <p>Feels Like</p>
+          <strong id="feelsLike">--°C</strong>
+        </div>
+      </div>
+    </section>
+    </main>
+
+    <div class="container">
+
+        </div>
+
+    <footer class="flex-footer">
+      <p>Copyright &copy; Weather.com</p>
+      
+    </footer>
+  
+
+  <script src="script.js"></script>
+
+</body>
+</html>
